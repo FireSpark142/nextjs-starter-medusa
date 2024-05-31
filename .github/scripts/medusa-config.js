@@ -28,7 +28,7 @@ const ADMIN_CORS = "/http://.+/";
 const STORE_CORS = "/http://.+/";
 
 const DATABASE_URL =
-  process.env.DATABASE_URL || "postgres://medusa:password@localhost/medusa";
+  process.env.DATABASE_URL || "postgres://default:CmQS5ZoA8ErO@ep-tiny-grass-a5eg7h67.us-east-2.aws.neon.tech:5432/verceldb?sslmode=require";
 
 const REDIS_URL = process.env.REDIS_URL || "redis://localhost:6379";
 
