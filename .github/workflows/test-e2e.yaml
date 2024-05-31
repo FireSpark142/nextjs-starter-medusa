@@ -8,20 +8,20 @@ on:
   workflow_dispatch:
 
 env:
-  PGHOST: localhost
+  PGHOST: ep-tiny-grass-a5eg7h67-pooler.us-east-2.aws.neon.tech
   PGPORT: 5432
-  PGUSER: postgres
-  PGPASSWORD: password
-  PGDATABASE: postgres
+  PGUSER: default
+  PGPASSWORD: CmQS5ZoA8ErO
+  PGDATABASE: verceldb
 
-  TEST_POSTGRES_USER: test_medusa_user
-  TEST_POSTGRES_PASSWORD: password
-  TEST_POSTGRES_DATABASE: test_medusa_db
+  TEST_POSTGRES_USER: default
+  TEST_POSTGRES_PASSWORD: CmQS5ZoA8ErO
+  TEST_POSTGRES_DATABASE: verceldb
   TEST_POSTGRES_DATABASE_TEMPLATE: test_medusa_db_template
-  TEST_POSTGRES_HOST: localhost
+  TEST_POSTGRES_HOST: ep-tiny-grass-a5eg7h67-pooler.us-east-2.aws.neon.tech
   TEST_POSTGREST_PORT: 5432
-  PRODUCTION_POSTGRES_DATABASE: medusa_db
-  CLIENT_SERVER: http://localhost:9000
+  PRODUCTION_POSTGRES_DATABASE: verceldb
+  CLIENT_SERVER: http://ep-tiny-grass-a5eg7h67-pooler.us-east-2.aws.neon.tech:9000
 
   JWT_SECRET: something
   COOKIE_SECRET: something
