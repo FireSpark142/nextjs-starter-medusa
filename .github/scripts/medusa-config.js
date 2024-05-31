@@ -22,11 +22,10 @@ try {
 } catch (e) {}
 
 // CORS when consuming Medusa from admin
-const ADMIN_CORS =
-  process.env.ADMIN_CORS || "/http://.+/";
+const ADMIN_CORS = "/http://.+/";
 
 // CORS to avoid issues when consuming Medusa from a client
-const STORE_CORS = process.env.STORE_CORS || "/http://.+/";
+const STORE_CORS = "/http://.+/";
 
 const DATABASE_URL =
   process.env.DATABASE_URL || "postgres://medusa:password@localhost/medusa";
@@ -102,9 +101,9 @@ const modules = {
 const projectConfig = {
   jwtSecret: process.env.JWT_SECRET,
   cookieSecret: process.env.COOKIE_SECRET,
-  store_cors: STORE_CORS,
+  store_cors: process.env.STORE_CORS,
   database_url: DATABASE_URL,
-  admin_cors: ADMIN_CORS,
+  admin_cors: process.env.ADMIN_CORS,
   // Uncomment the following lines to enable REDIS
   redis_url: REDIS_URL
 };
