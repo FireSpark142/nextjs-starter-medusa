@@ -21,8 +21,7 @@ try {
   dotenv.config({ path: process.cwd() + "/" + ENV_FILE_NAME });
 } catch (e) {}
 
-const DATABASE_URL =
-  process.env.DATABASE_URL || "postgres://default:CmQS5ZoA8ErO@ep-tiny-grass-a5eg7h67.us-east-2.aws.neon.tech:5432/verceldb?sslmode=require";
+const DATABASE_URL process.env.DATABASE_URL;
 
 const REDIS_URL = process.env.REDIS_URL || "redis://localhost:6379";
 
