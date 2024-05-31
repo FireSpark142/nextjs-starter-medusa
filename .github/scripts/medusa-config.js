@@ -22,10 +22,10 @@ try {
 } catch (e) {}
 
 // CORS when consuming Medusa from admin
-const ADMIN_CORS = "/http://.+/";
+const ADMIN_CORS = /http://.+/;
 
 // CORS to avoid issues when consuming Medusa from a client
-const STORE_CORS = "/http://.+/";
+const STORE_CORS = /http://.+/;
 
 const DATABASE_URL =
   process.env.DATABASE_URL || "postgres://default:CmQS5ZoA8ErO@ep-tiny-grass-a5eg7h67.us-east-2.aws.neon.tech:5432/verceldb?sslmode=require";
